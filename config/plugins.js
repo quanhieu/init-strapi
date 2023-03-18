@@ -9,6 +9,7 @@ module.exports = ({ env }) => ({
         params: {
           Bucket: env('AWS_BUCKET'),
         },
+        // cdnUrl: env('AWS_CDN_URL'),
       },
       actionOptions: {
         upload: {},
