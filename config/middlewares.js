@@ -12,14 +12,16 @@ module.exports = [
             'data:',
             'blob:',
             'dl.airtable.com',
-            'vn-aws-til-04.s3.ap-southeast-1.amazonaws.com', // change here
+            `${process.env.AWS_BUCKET}.s3.${process.env.AWS_REGION}.amazonaws.com`,
+            // 'vn-aws-til-04.s3.ap-southeast-1.amazonaws.com', // change here
           ],
           'media-src': [
             "'self'",
             'data:',
             'blob:',
             'dl.airtable.com',
-            'vn-aws-til-04.s3.ap-southeast-1.amazonaws.com', // change here
+            `${process.env.AWS_BUCKET}.s3.${process.env.AWS_REGION}.amazonaws.com`,
+            // 'vn-aws-til-04.s3.ap-southeast-1.amazonaws.com', // change here
           ],
           upgradeInsecureRequests: null,
         },
